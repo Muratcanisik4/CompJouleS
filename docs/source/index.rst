@@ -6,7 +6,7 @@
 .. role:: raw-role(raw)
    :format: html latex
 
-Welcome to pyJoules's documentation!
+Welcome to CompJouleS's documentation!
 ************************************
 	    
 About
