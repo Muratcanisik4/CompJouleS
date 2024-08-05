@@ -134,3 +134,23 @@ Contact Information
 -------------------
 
 For direct inquiries, contact us mrtisik@stanford.edu.
+
+Contributing
+------------
+
+If you would like to contribute code you can do so via GitHub by forking the repository and sending a pull request.
+
+When submitting code, please make every effort to follow existing coding conventions and style in order to keep the code as readable as possible.
+
+
+Table of contents
+=================
+
+.. toctree::
+   :maxdepth: 2
+
+   About <self>
+   usages/usage
+   handlers/handlers
+   devices/devices
+   API/API.rst
