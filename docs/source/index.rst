@@ -123,14 +123,14 @@ Support and Contact
 Issue Tracker
 -------------
 
-For reporting issues or feature requests, use the issue tracker \href{https://compjoules.slac.stanford.edu/}{here}.
+For reporting issues or feature requests, use the issue tracker https://compjoules.slac.stanford.edu.
 
 Community Support
 -----------------
 
-Join our community forum for discussions and help \href{https://compjoules.slac.stanford.edu/}{here}.
+Join our community forum for discussions and help https://compjoules.slac.stanford.edu.
 
 Contact Information
 -------------------
 
-For direct inquiries, contact us \href{mailto:mrtisik@slac.stanford.edu}{here}.
+For direct inquiries, contact us mrtisik@stanford.edu.
