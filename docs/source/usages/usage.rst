@@ -84,3 +84,5 @@ with EnergyContext(handler=csv_handler, domains=[RaplPackageDomain(1), NvidiaGPU
     # Second part of the function
 
 csv_handler.save_data()
+
+Done!
