@@ -150,7 +150,7 @@ Table of contents
    :maxdepth: 2
 
    About <self>
-   usages/usage
+   Compatible Packages/usage
    handlers/handlers
    devices/devices
    API/API.rst
