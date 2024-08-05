@@ -32,8 +32,7 @@ Usage Examples
 Basic Usage
 To use CompJouleS, import the necessary modules and initialize the tool as per your requirements. The tool supports energy and temperature measurement for machine learning models running on either CPU, GPU, or FPGA.
 
-python
-Kodu kopyala
+
 from pyJoules.energy_meter import measure_energy
 from pyJoules.device.rapl_device import RaplPackageDomain, RaplCoreDomain
 from pyJoules.device.nvidia_device import NvidiaGPUDomain
@@ -51,8 +50,7 @@ example_function()
 Logging Energy Consumption
 You can log energy consumption data to a CSV file:
 
-python
-Kodu kopyala
+
 from pyJoules.energy_meter import measure_energy
 from pyJoules.handler.csv_handler import CSVHandler
 from pyJoules.device.rapl_device import RaplPackageDomain
