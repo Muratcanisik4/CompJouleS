@@ -1,43 +1,47 @@
-CSV Handler
-***********
+# Setting Up CompJouleS
 
-This handler save the measured energy sample on a csv file
+## Prerequisites
+- Python 3.10 or higher.
+- Linux OS for full functionality.
+- Tools:
+  - NVIDIA SMI
+  - Intel Power Gadget
+  - Xilinx FPGA tools
 
-How to Use it
--------------
+## Configuring the Environment
+Ensure that the tools (NVIDIA SMI, Intel Power Gadget, etc.) are correctly installed and accessible in your system's PATH.
 
-Create a ``CSVHandler`` instance and pass it as a parameter of the context manager or the function decorator. You have to specify the filename of the file that will store the energy sample.
+### Steps to Configure the Environment
 
-When the measure is done, you have to use the ``save_data`` method to write the data on disk.
+1. **Install Python 3.10 or higher:**
+    ```bash
+    sudo apt update
+    sudo apt install python3.10
+    ```
 
-Example :
+2. **Install NVIDIA SMI:**
+    - NVIDIA SMI comes with the NVIDIA driver. Ensure you have the latest NVIDIA driver installed:
+      ```bash
+      sudo apt-get install nvidia-driver-460
+      ```
 
-.. code-block:: python
+3. **Install Intel Power Gadget:**
+    - Download the Intel Power Gadget from the [Intel website](https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html).
+    - Follow the installation instructions provided on the site.
 
-   from pyJoules.handler.csv_handler import CSVHandler
-   csv_handler = CSVHandler('result.csv')
-		
-   with EnergyContext(handler=csv_handler, domains=[RaplPackageDomain(1), NvidiaGPUDomain(0)], start_tag='foo') as ctx:
-       foo()
-       ctx.record(tag='bar')
-       bar()
+4. **Install Xilinx FPGA tools:**
+    - Download and install Vivado from the [Xilinx website](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools.html).
+    - Ensure the necessary TCL scripts and DCP files are available for FPGA integration.
 
-   csv_handler.save_data()
+5. **Set the PATH environment variable:**
+    ```bash
+    export PATH=$PATH:/usr/local/cuda/bin:/opt/intel/power_gadget
+    ```
 
-Output
-------
+6. **Install necessary Python packages:**
+    ```bash
+    pip install pyJoules torch pandas scikit-learn transformers thop
+    ```
 
-The previous example will produce the following csv file ``result.csv``
+By following these steps, you will ensure that your environment is correctly configured to use CompJouleS effectively.
 
-.. code-block::
-
-   timestamp;tag;duration;package_0;nvidia_gpu_0
-   AAAA;foo;BBBB;CCCC;DDDD
-   AAAA2;bar;BBBB2;CCCC2;DDDD2
-
-with :
-
-- AAAA* : timestamp of the measured interval beginning
-- BBBB* duration of the measured interval (in seconds)
-- CCCC* energy consumed by CPU 0 during the measured interval
-- DDDD* energy consumed by GPU 0 during the measured interval
