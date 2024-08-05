@@ -151,6 +151,6 @@ Table of contents
 
    About <self>
    Compatible Packages/usage
-   xx/xxx
-   yy/yyy
-   zzz/zz
+   handlers/handlers
+   devices/devices
+   API/API.rst
