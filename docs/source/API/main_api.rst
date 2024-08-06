@@ -5,6 +5,7 @@
 ### Basic Usage
 
 #### Example of measuring energy consumption with a basic function
+
 ```python
 from compjoules import measure_energy
 
