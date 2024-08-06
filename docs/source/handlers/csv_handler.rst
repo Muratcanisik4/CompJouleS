@@ -44,4 +44,15 @@ Ensure that the tools (NVIDIA SMI, Intel Power Gadget, etc.) are correctly insta
     ```
 
 By following these steps, you will ensure that your environment is correctly configured to use CompJouleS effectively.
+from energy_measurement import measure_energy, CSVHandler
+
+csv_handler = CSVHandler('energy_log.csv')
+
+@measure_energy(handler=csv_handler)
+def my_function():
+    # Fonksiyonunuzun implementasyonu
+    pass
+
+my_function()
+
 
