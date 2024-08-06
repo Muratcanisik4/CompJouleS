@@ -1,17 +1,9 @@
-# CompJouleS
-
-## Usage Examples
-
-### Basic Usage
-
-#### Example of measuring energy consumption with a basic function
-
-```python
-from compjoules import measure_energy
+from energy_measurement import measure_energy
 
 @measure_energy
-def my_function():
-    # Your function logic here
-    pass
+def example_function():
+    # Function logic here
+    for _ in range(1000000):
+        pass
 
-my_function()
+example_function()
