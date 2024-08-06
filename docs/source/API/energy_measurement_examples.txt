@@ -1,0 +1,129 @@
+
+### 4- Usage Examples
+
+#### Basic Usage
+
+**Example of measuring energy consumption with a basic function:**
+
+```python
+from energy_measurement import measure_energy
+
+@measure_energy
+def example_function():
+    # Function logic here
+    for _ in range(1000000):
+        pass
+
+example_function()
+```
+
+**Explanation of the `measure_energy` decorator:**
+
+The `measure_energy` decorator is used to measure the energy consumption of a function. When applied to a function, it will automatically start measuring energy consumption when the function is called and stop when the function returns. The results can be printed or logged depending on the configuration.
+
+#### Logging Energy Consumption
+
+**Example of logging energy data to a CSV file:**
+
+```python
+from energy_measurement import measure_energy, CSVHandler
+
+# Configure the CSVHandler
+csv_handler = CSVHandler('energy_log.csv')
+
+@measure_energy(handler=csv_handler)
+def example_function():
+    # Function logic here
+    for _ in range(1000000):
+        pass
+
+example_function()
+```
+
+**Explanation of `CSVHandler` and its usage:**
+
+`CSVHandler` is a class designed to log energy consumption data to a CSV file. When creating an instance of `CSVHandler`, you provide the path to the CSV file where the data should be logged. By passing this handler to the `measure_energy` decorator, the energy consumption data for the decorated function will be written to the specified CSV file.
+
+#### Using Context Manager
+
+**Adding tagged "breakpoints" in measurement:**
+
+```python
+from energy_measurement import EnergyContext
+
+def example_function():
+    with EnergyContext('example_function') as ec:
+        # First part of the function
+        for _ in range(500000):
+            pass
+        ec.add_tag('breakpoint_1')
+        
+        # Second part of the function
+        for _ in range(500000):
+            pass
+        ec.add_tag('breakpoint_2')
+
+example_function()
+```
+
+**Example of using `EnergyContext`:**
+
+The `EnergyContext` class provides a context manager for measuring energy consumption in specific parts of a function. By using `EnergyContext`, you can add tags or "breakpoints" within your function to measure energy consumption between different segments. This can be useful for identifying which parts of your function are most energy-intensive.
+
+In this example, `EnergyContext` is used to measure the energy consumption of two distinct parts of the `example_function`. The `add_tag` method is used to create breakpoints, allowing for detailed energy profiling.
+
+---
+
+### How to Upload to GitHub
+
+1. **Create a GitHub Repository:**
+
+   - Go to [GitHub](https://github.com) and log in to your account.
+   - Click on the "New" button to create a new repository.
+   - Fill in the repository name, description (optional), and select whether you want the repository to be public or private.
+   - Click on "Create repository".
+
+2. **Clone the Repository to Your Local Machine:**
+
+   Open a terminal and run the following commands:
+
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+   cd YOUR_REPOSITORY_NAME
+   ```
+
+3. **Add Your Code Files:**
+
+   Move your code files into the cloned repository directory. For example, if your code is in a file named `energy_examples.py`, copy it to the repository directory.
+
+4. **Stage Your Changes:**
+
+   In the terminal, stage the changes by running:
+
+   ```bash
+   git add .
+   ```
+
+5. **Commit Your Changes:**
+
+   Commit your changes with a meaningful message:
+
+   ```bash
+   git commit -m "Added energy measurement usage examples"
+   ```
+
+6. **Push Your Changes to GitHub:**
+
+   Push the changes to the GitHub repository:
+
+   ```bash
+   git push origin main
+   ```
+
+   Replace `main` with the branch name if you are using a different branch.
+
+7. **Verify Your Changes:**
+
+   Go to your GitHub repository page and verify that your files have been uploaded successfully.
+
+By following these steps, you can easily upload your code to a GitHub repository and share it with others.
