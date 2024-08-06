@@ -1,16 +1,19 @@
-# CompJouleS
+# Enerji Ölçüm Örnekleri
 
-## Usage Examples
+Bu depo, çeşitli araçlar ve teknikler kullanarak enerji tüketimini ölçme konusundaki örnekleri ve açıklamaları içermektedir.
 
-### Basic Usage
+## Temel Kullanım
 
-#### Example of measuring energy consumption with a basic function
+### Basit Bir Fonksiyonla Enerji Tüketimini Ölçme Örneği
+
+Bir fonksiyonun enerji tüketimini ölçmek için, `energy_measurement` modülü tarafından sağlanan `measure_energy` dekoratörünü kullanabilirsiniz. İşte basit bir örnek:
+
 ```python
-from compjoules import measure_energy
+from energy_measurement import measure_energy
 
 @measure_energy
 def my_function():
-    # Your function logic here
+    # Fonksiyonunuzun implementasyonu
     pass
 
 my_function()
