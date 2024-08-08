@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'recommonmark',  # Added recommonmark here
 ]
 
 intersphinx_mapping = {
@@ -34,14 +35,9 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-pip install recommonmark
-
+# Additional configuration for recommonmark
 import recommonmark
 from recommonmark.transform import AutoStructify
-
-extensions = [
-    'recommonmark',
-]
 
 source_suffix = ['.rst', '.md']
 
