@@ -154,3 +154,4 @@ Table of contents
    handlers/handlers
    devices/devices
    API/API.rst
+   troubleshooting-and-tips.rst
