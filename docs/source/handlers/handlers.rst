@@ -1,3 +1,6 @@
+Handlers
+*******
+
 # Setting Up CompJouleS
 
 ## Prerequisites
