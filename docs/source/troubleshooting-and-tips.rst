@@ -1,5 +1,5 @@
 Troubleshooting and Tips
-*******
+=====
 
 ## Common Issues and Solutions
 - **Permission errors**: Ensure that you have the necessary permissions to access the hardware or files. Check if your user account has the required privileges or run the application with elevated permissions.
