@@ -33,7 +33,7 @@ Double-check the calibration settings and ensure that the measurement devices ar
 .. _best-practices:
 
 Best Practices
-==============
+-------------------
 
 .. _calibration:
 
