@@ -150,8 +150,8 @@ Table of contents
    :maxdepth: 2
 
    About <self>
-   Compatible Packages/usage
-   handlers/handlers
-   devices/devices
-   API/API.rst
+   compatible-packages.rst
+   setting-up-CompJouleS.rst
+   usage-examples.rst
    troubleshooting-and-tips.rst
+   support-and-contact.rst
