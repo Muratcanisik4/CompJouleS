@@ -2,11 +2,6 @@ Troubleshooting and Tips
 =====
 
 
-.. _common-issues-solutions:
-
-Common Issues and Solutions
-===========================
-
 .. _permission-errors:
 
 Permission Errors
