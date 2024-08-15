@@ -1,3 +1,5 @@
+Support and Contact
+********
 .. _issue-tracker:
 
 Issue Tracker
