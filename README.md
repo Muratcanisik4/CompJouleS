@@ -1,20 +1,16 @@
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png">
-<img alt="CompJouleS Logo" src="https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png">
+  <img alt="CompJouleS Logo" src="https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png">
 </picture>
 
+# CompJouleS - Comprehensive Energy and Temperature Estimation Tool
 
-
-
-CompJouleS - Comprehensive Energy and Temperature Estimation Tool
 CompJouleS is a versatile energy estimation tool designed for detailed analysis of energy consumption and temperature across multiple hardware architectures, including CPUs, GPUs, FPGAs, and ASICs. CompJouleS employs both top-down and bottom-up approaches to deliver precise metrics, optimized for machine learning, data analytics, and custom algorithms.
-
 
 ## Installation
 CompJouleS is installable via [pip](https://pypi.org/):
 ```bash
 pip install compjoules
-
 
 
 Check your [local framework](https://compjoules.readthedocs.io/en/latest/support-and-contact.html) for CompJouleS support.
