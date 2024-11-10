@@ -1,0 +1,2 @@
+# SLAC-Energy-Efficiency
+This repository hosts Python-based implementations of three distinct architectures: Spiking Neural Network, Graph Neural Network, and Transformer. These were developed with a focus on Natural Language Processing, specifically for a Question-Answer Dataset. Preliminary results, obtained from CPU and GPU runs, are included. We've further adapted these designs for FPGA implementation. Work on ASIC deployment is currently in progress, and we will update the repository with those results once available.
