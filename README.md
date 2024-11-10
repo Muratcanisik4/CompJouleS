@@ -1,4 +1,5 @@
-![CompJouleS Logo](https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png)
+<img src="https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png" alt="CompJouleS Logo">
+
 
 
 # CompJouleS - Comprehensive Energy and Temperature Estimation Tool
