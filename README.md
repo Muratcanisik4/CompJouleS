@@ -16,7 +16,7 @@ pip install compjoules
 
 
 
-Check your local framework[(https://compjoules.readthedocs)](https://compjoules.readthedocs.io/en/latest/index.html)
+Check your local framework [(https://compjoules.readthedocs)](https://compjoules.readthedocs.io/en/latest/index.html)
 
 ## Required Packages
 
