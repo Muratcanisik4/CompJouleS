@@ -43,6 +43,7 @@ sample_task()
 source <path_to_tcl_script>/measure_power.tcl
 open_checkpoint <path_to_dcp_file>/design.dcp
 
+---
 
 ## About CompJouleS
 > Read more in our [documentation about CompJouleS primitives](https://compjoules.readthedocs.io/en/latest/troubleshooting-and-tips.html)
