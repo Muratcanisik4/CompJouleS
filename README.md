@@ -85,10 +85,12 @@ Hybrid architecture support
 
 
 ## Acknowledgements
-This work was originally conceived at the [Telluride Neuromorphic Workshop 2023](https://tellurideneuromorphic.org) by the following contributors:
+This tool is partially supported by the U.S. Department of Energy’s Office of Science contract DE-AC02-76SF00515 with SLAC through an Annual Operating Plan agreement WBS 2.1.0.86 from the Office of Energy Efficiency and Renewable Energy's Advanced Manufacturing and Materials Technology Office by the following contributors:
 
-- Author 1
-- Author 2
+- Murat Isik
+- Jens Egholm Pedersen
+- Vedant Karia
+- Sadasivan Shankar
 
 
 ## Citation
