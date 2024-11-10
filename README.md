@@ -18,6 +18,19 @@ pip install compjoules
 
 Check your [local framework][(https://compjoules.readthedocs)](https://compjoules.readthedocs.io/en/latest/index.html)
 
+## Required Packages
+
+To use CompJouleS effectively, ensure you have the following packages installed:
+
+- **PyJoules**
+- **Torch**
+- **Pandas**
+- **Scikit-Learn**
+- **Transformers**
+- **Thop**
+- **NVIDIA Management Library (NVML)**
+- **Intel Power Gadget**
+
 ## Usage
 
 > Read more in our [documentation about CompJouleS usage](https://compjoules.readthedocs.io/en/latest/index.html)
