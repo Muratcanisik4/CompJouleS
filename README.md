@@ -63,10 +63,9 @@ This work was originally conceived at the [Telluride Neuromorphic Workshop 2023]
 
 If you use NIR in your work, please cite the [following arXiv preprint](https://arxiv.org/abs/2311.14641)
 
-@unpublished{CompJouleS24,
-  title        = {CompJouleS: A Cross-Platform Energy Estimation Tool for Machine Learning Algorithms on Heterogeneous Computing Architectures},
-  author       = {SLAC National Laboratory/Stanford University (Sadasivan Shankar Lab)},
-  note         = {Manuscript in preparation},
-  year         = {2024},
-  institution  = {SLAC National Accelerator Laboratory, Stanford University},
+@article{CompJouleS2024,
+    title={CompJouleS: Modular Energy and Temperature Estimation Tool},
+    author={SLAC National Accelerator Laboratory},
+    journal={Manuscript in preparation},
+    year={2024},
 }
