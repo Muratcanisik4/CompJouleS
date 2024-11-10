@@ -1,4 +1,7 @@
-![CompJouleS Logo](https://raw.githubusercontent.com/Muratcanisik4/CompJouleS/main/docs/source/compjoules_logo.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Muratcanisik4/CompJouleS/main/docs/source/compjoules_logo.png" alt="CompJouleS Logo">
+</p>
+
 
 
 
