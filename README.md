@@ -24,7 +24,7 @@ Check your [local framework][(https://compjoules.readthedocs)](https://compjoule
 To end-users, CompJouleS is just a declarative format that sits between formats and will hopefully be as invisible as possible.
 However, it is possible to export Python objects or CompJouleS files.
 
-```bash
+python
 from pyJoules.energy_meter import measure_energy
 from pyJoules.device.rapl_device import RaplPackageDomain
 
