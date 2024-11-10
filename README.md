@@ -1,4 +1,7 @@
-<picture> <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Muratcanisik4/CompJouleS/docs/source/logo_dark.png"> <img alt="CompJouleS Logo" src="https://github.com/yourusername/CompJouleS/raw/main/docs/logo_light.png"> </picture>
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Muratcanisik4/CompJouleS/docs/source/logo_dark.png">
+
+
+
 CompJouleS - Comprehensive Energy and Temperature Estimation Tool
 CompJouleS is a versatile energy estimation tool designed for detailed analysis of energy consumption and temperature across multiple hardware architectures, including CPUs, GPUs, FPGAs, and ASICs. CompJouleS employs both top-down and bottom-up approaches to deliver precise metrics, optimized for machine learning, data analytics, and custom algorithms.
 
