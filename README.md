@@ -16,7 +16,9 @@ pip install compjoules
 Check your [local framework](https://compjoules.readthedocs.io/en/latest/support-and-contact.html) for CompJouleS support.
 
 ## Usage
+
 > Read more in our [documentation about CompJouleS usage](https://compjoules.readthedocs.io/en/latest/index.html)
+
 
 To end-users, CompJouleS is just a declarative format that sits between formats and will hopefully be as invisible as possible.
 However, it is possible to export Python objects or CompJouleS files.
