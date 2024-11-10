@@ -69,11 +69,16 @@ Hybrid architecture support
 
 
 ## Acknowledgements
-This work was originally conceived at the [Telluride Neuromorphic Workshop 2023](tellurideneuromorphic.org) by the authors below (in alphabetical order):
-**
+This work was originally conceived at the [Telluride Neuromorphic Workshop 2023](https://tellurideneuromorphic.org) by the following contributors:
 
-If you use NIR in your work, please cite the [following arXiv preprint](https://arxiv.org/abs/2311.14641)
+- Author 1
+- Author 2
 
+
+## Citation
+If you use CompJouleS in your work, please cite the following:
+
+```bibtex
 @article{CompJouleS2024,
     title={CompJouleS: Modular Energy and Temperature Estimation Tool},
     author={SLAC National Accelerator Laboratory},
