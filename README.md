@@ -1,7 +1,5 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png">
-  <img alt="CompJouleS Logo" src="https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png">
-</picture>
+![CompJouleS Logo](https://github.com/Muratcanisik4/CompJouleS/docs/source/compjoules_logo.png)
+
 
 # CompJouleS - Comprehensive Energy and Temperature Estimation Tool
 
