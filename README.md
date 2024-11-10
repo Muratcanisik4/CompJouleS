@@ -37,8 +37,9 @@ sample_task()
 
 
 
-'''tcl
+
 # TCL Script: measure_power.tcl
+'''tcl
 source <path_to_tcl_script>/measure_power.tcl
 open_checkpoint <path_to_dcp_file>/design.dcp
 
