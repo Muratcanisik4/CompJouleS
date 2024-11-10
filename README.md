@@ -12,7 +12,7 @@ bash
 pip install compjoules
 
 
-Check your [local framework]([https://neuroir.org/docs](https://neuroir.org/docs/support.html)) for NIR support.
+Check your [local framework](((https://compjoules.readthedocs.io/en/latest/support-and-contact.html))) for CompJouleS support.
 
 ## Usage
 > Read more in our [documentation about NIR usage](https://neuroir.org/docs)
