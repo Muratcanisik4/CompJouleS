@@ -9,11 +9,12 @@ CompJouleS is a versatile energy estimation tool designed for detailed analysis 
 
 ## Installation
 CompJouleS is installable via [pip](https://pypi.org/):
-```bash
+```python
 pip install compjoules
 
 
-Check your [local framework](https://compjoules.readthedocs.io/en/latest/support-and-contact.html) for CompJouleS support.
+
+Check your [local framework](https://compjoules.readthedocs
 
 ## Usage
 
