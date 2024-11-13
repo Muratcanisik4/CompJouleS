@@ -39,7 +39,7 @@ To use CompJouleS effectively, ensure you have the following packages installed:
 To end-users, CompJouleS is just a declarative format that sits between formats and will hopefully be as invisible as possible.
 However, it is possible to export Python objects or CompJouleS files.
 
-python
+```bash
 from pyJoules.energy_meter import measure_energy
 from pyJoules.device.rapl_device import RaplPackageDomain
 
@@ -49,15 +49,15 @@ def sample_task():
     pass
 
 sample_task()
+```
 
 
-
-
+```bash
 # TCL Script: measure_power.tcl
 source <path_to_tcl_script>/measure_power.tcl
 open_checkpoint <path_to_dcp_file>/design.dcp
 
----
+```
 
 ## About CompJouleS
 > Read more in our [documentation about CompJouleS primitives](https://compjoules.readthedocs.io/en/latest/troubleshooting-and-tips.html)
@@ -96,10 +96,11 @@ This tool is partially supported by the U.S. Department of Energy’s Office of 
 ## Citation
 If you use CompJouleS in your work, please cite the following:
 
-```bibtex
+```bash
 @article{CompJouleS2024,
     title={CompJouleS: Modular Energy and Temperature Estimation Tool},
     author={SLAC National Accelerator Laboratory},
     journal={Manuscript in preparation},
     year={2024},
 }
+```
