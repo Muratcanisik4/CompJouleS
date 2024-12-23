@@ -1,7 +1,7 @@
 # Basic example
 import compjoules as cj
 
-@cj.energy(cj.CompJoulesParameters(cpu=False), outputfile="test.csv")
+@cj.energy(cj.CompJoulesParameters(cpu=False, outputfile="test.csv"))
 def my_model():
   ...
 
