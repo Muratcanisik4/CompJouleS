@@ -1,0 +1,63 @@
+open_project transformer.xpr
+
+# Generate Utilization Report
+report_utilization -file report_utilization.txt
+
+# Generate Timing Summary Report
+report_timing_summary -file report_timing_summary.txt
+
+# Generate Power Report
+report_power -file report_power.txt
+
+# Define the filenames of the report files
+set timing_report_filename "report_timing_summary.txt"
+set power_report_filename "report_power.txt"
+
+# Define the output CSV filename
+set csv_filename "summary.csv"
+
+# Open the CSV file for writing
+set csv_file [open $csv_filename "w"]
+puts $csv_file "Metric,Value"
+
+# Function to extract WNS from the timing summary report
+proc extract_wns {filename} {
+    set file [open $filename "r"]
+    set wns "N/A"
+    while {[gets $file line] != -1} {
+        if {[regexp {WNS\(ns\)\s+\s*([-0-9\.]+)} $line -> wns_val]} {
+            set wns $wns_val
+            break
+        }
+    }
+    close $file
+    return $wns
+}
+
+# Function to extract Total On-Chip Power from the power report
+proc extract_total_power {filename} {
+    set file [open $filename "r"]
+    set total_power "N/A"
+    while {[gets $file line] != -1} {
+        if {[regexp {Total On-Chip Power \(W\)\s+\|\s*([0-9\.]+)} $line -> total_power_val]} {
+            set total_power $total_power_val
+            break
+        }
+    }
+    close $file
+    return $total_power
+}
+
+# Extract the values using the defined functions
+set wns [extract_wns $timing_report_filename]
+set total_power [extract_total_power $power_report_filename]
+
+# Write the extracted values to the CSV file
+puts $csv_file "WNS,$wns"
+puts $csv_file "Total On-Chip Power,$total_power"
+
+# Close the CSV file
+close $csv_file
+
+puts "Summary written to $csv_filename"
+

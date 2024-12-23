@@ -11,7 +11,15 @@ authors = [
   { name = "Sadas Shankar", email = "sadas.shankar@stanford.edu" },
 ]
 dynamic = ["version"]
-dependencies = ["numpy", "torch", "transformers", "scikit-learn", "pandas", "thop", "pyJoules"]
+dependencies = [
+  "numpy",
+  "torch",
+  "transformers",
+  "scikit-learn",
+  "pandas",
+  "thop",
+  "pyJoules",
+]
 
 [project.entry-points."setuptools.finalize_distribution_options"]
 setuptools_scm = "setuptools_scm._integration.setuptools:infer_version"
